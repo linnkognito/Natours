@@ -1,0 +1,62 @@
+{
+  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+  "plugins": ["prettier", "node"],
+  "rules": {
+    "prettier/prettier": "error",
+    "spaced-comment": "off",
+    "no-console": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }],
+    "node/no-unsupported-features/es-syntax": [
+      // here
+      "error",
+      {
+        "version": ">=8.3.0", // here
+        "ignores": []
+      }
+    ] // here
+  },
+  "settings": {
+    "node": {
+      "version": ">=20.15.0"
+    }
+  },
+  "parserOptions": {
+    // here
+    "ecmaVersion": 2018 // here
+  } // here
+}
+// {
+//   "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+//   "plugins": ["prettier", "node"],
+//   "rules": {
+//     "prettier/prettier": "error",
+//     "spaced-comment": "off",
+//     "no-console": "off",
+//     "consistent-return": "off",
+//     "func-names": "off",
+//     "object-shorthand": "off",
+//     "no-process-exit": "off",
+//     "no-param-reassign": "off",
+//     "no-return-await": "off",
+//     "no-underscore-dangle": "off",
+//     "class-methods-use-this": "off",
+//     "prefer-destructuring": ["error", { "object": true, "array": false }],
+//     "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
+//   },
+//   "settings": {
+//     "node": {
+//       "version": ">=20.15.0"
+//     }
+//   }
+
+
+// }
