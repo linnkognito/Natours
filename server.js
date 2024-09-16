@@ -34,7 +34,7 @@ mongoose
     console.error('DB connection error:', err);
   });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 const server = app.listen(port, () => {
   console.log(`App running on port ${port}`);
 });
