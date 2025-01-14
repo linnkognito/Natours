@@ -118,7 +118,6 @@ app.use(
 // COMPRESSION ////////////////////////////////
 app.use(compression());
 
-// TEST MW - add current time to req
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
   next();

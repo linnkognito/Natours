@@ -13,8 +13,7 @@ export const bookTour = async (tourId) => {
 
     // Create checkout form + charge card
     await stripe.redirectToCheckout({
-      // data obj created by axios
-      sessionId: session.data.data.session.id,
+      sessionId: session.data.data.session.id, // axios data obj
     });
   } catch (err) {
     console.log(err);

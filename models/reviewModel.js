@@ -62,7 +62,6 @@ reviewSchema.statics.calcAverageRatings = async function (tourId) {
     },
   ]);
 
-  console.log(stats);
   // Persist to database (update fields) only if there actually are stats (if there's no reviews, there's no stats)
   if (stats.length > 0) {
     await Tour.findByIdAndUpdate(tourId, {
